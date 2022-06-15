@@ -4,5 +4,8 @@ AllCops:
         Exclude:
                 - './bin/**/*'
                 - './config/**/*'
+                - './db/**/*'
+                - './app/admin/**/*'
+                - 'Guardfile'
 Style/Documentation:
         Enabled: false

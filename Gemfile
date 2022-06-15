@@ -80,8 +80,8 @@ gem 'rspec-rails', '~> 5.1', groups: %i[development test]
 gem 'rubocop', '~> 1.30', groups: %i[development test]
 gem 'simplecov', require: false, group: :test
 
-gem "devise", "~> 4.8"
-gem "pundit", "~> 2.2"
-gem "activeadmin", "~> 2.13"
+gem 'activeadmin', '~> 2.13'
+gem 'devise', '~> 4.8'
+gem 'pundit', '~> 2.2'
 
-gem "sassc-rails", "~> 2.1"
+gem 'sassc-rails', '~> 2.1'
