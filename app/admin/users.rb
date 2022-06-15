@@ -15,4 +15,25 @@ ActiveAdmin.register User do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
+
+  show do
+    panel "Details" do
+      attributes_table_for user do
+        row :id
+        row :username
+        row :created_at
+      end
+    end
+
+    panel "Echoes" do
+      table_for user.echoes do
+        column :id do |echo|
+          link_to echo.id, [:admin, echo]
+        end
+        column :content
+        column :created_at
+      end
+    end
+    active_admin_comments
+  end
 end
